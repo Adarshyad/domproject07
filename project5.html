@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseOut</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(62, 121, 145);
+        }
+
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./lambo.jpg" alt="" id="image" height="150px" width="300px">
+    <p id="detail">This is the Image of Lamborgini aventador SV roadster</p>
+    <script>
+        const img = document.getElementById('image')
+        img.addEventListener('mouseout', () => {
+            let detail = document.getElementById('detail')
+            document.body.removeChild(detail)
+
+        })
+    </script>
+</body>
+
+</html>

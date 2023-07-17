@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyup and Keydown Event</title>
+</head>
+<body>
+    <!-- onkeyup event  -->
+    <h1>The keyup Event</h1>
+    <p>The function transforms the input field to upper case </p>
+    Enter your name: <input type="text" id="input" onkeyup="newfunct()">
+    
+    <!-- onkeydown Event  -->
+    <h1>The onkeydown Event</h1>
+    <input type="text" onkeydown="newfuncct()">
+    <p id="detail"></p>
+
+    <script>
+        // keyup event function
+       function newfunct() {
+        let x = document.getElementById('input')
+        x.value = x.value.toUpperCase()
+       }
+       // keydown event function
+       function newfuncct() {
+        document.getElementById('detail').innerText = "You pressed a key inside the input field"
+       }
+    </script>
+</body>
+</html>

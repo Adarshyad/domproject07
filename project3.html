@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doubleclick</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgb(18, 123, 152);
+            width: 40%;
+            height: 50%;
+            font-weight: bolder;
+            border-radius: 20px;
+            background-color: rgb(141, 141, 196);
+        }
+
+        div {
+            margin-top: 15px;
+        }
+
+        #btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            margin-left: 80px;
+            width: 100px;
+            height: 30px;
+            border: 2px solid black;
+            border-radius: 15px;
+            font-weight: bolder;
+            background-color: rgb(18, 123, 152);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form action="" id="remove">
+            <div class="registrationform">
+            <h1>Registration Form</h1>
+            <div>Name : <input type="text" placeholder="Enter your name"></div>
+            <div>Email-id : <input type="email" placeholder="Email address"></div>
+            <div>DateOfBirth : <input type="date" placeholder=""></div>
+            <div>Create Password : <input type="password" name="" id="">
+            <p>Note: Doubleclick for Submission</p>
+            <div id="btn">Submit</div>
+            <p id="Submission"></p>
+
+        </form>
+   
+    
+    </div>
+    <script>
+        const Btn = document.getElementById('btn')
+        Btn.addEventListener('dblclick', () => {
+            let text = document.getElementById('Submission')
+            text.innerText = "You'r Registered"
+            text.style.fontWeight = 'bolder'
+            
+        })
+        
+    </script>
+</body>
+</html>
